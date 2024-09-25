@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHCC Terminal</title>
+    <link rel="stylesheet" href="/static/styles.css">
+        <script src="/static/js/shell.js"></script>
+
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="button close"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> </a></span>
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
+            </div>
+            <div class="terminal-title">{{ username }}@whcc.club: ~</div>
+        </div>
+        <div class="terminal-body">
+            <div class="output" id="output">
+<pre class="banner">
+██╗    ██╗██╗  ██╗ ██████╗ ██████╗
+██║    ██║██║  ██║██╔════╝██╔════╝
+██║ █╗ ██║███████║██║     ██║
+██║███╗██║██╔══██║██║     ██║
+╚███╔███╔╝██║  ██║╚██████╗╚██████╗
+ ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝
+
+<span class="text">
+Welcome to the White Hat Cyber Crew (WHCC) at BCIT!
+We are a new club dedicated to cybersecurity, ethical hacking, and
+running Capture The Flag (CTF) events. Explore our resources, join
+our CTFs, and learn to hack ethically.
+
+Type 'help' to see available commands.
+</span>
+</pre>
+            </div>
+                <div class="input-line">
+                    <span class="prompt">{{ username }}<span class="domain">@whcc.club</span>:~$ </span>
+                    <input type="text" id="input" data-username="{{ username }}" autofocus autocomplete="off" placeholder="Enter command...">                </div>
+        </div>
+    </div>
+</body>
+</html>

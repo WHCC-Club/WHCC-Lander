@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace; /* Use a modern coding font */
+    background-color: #1E1E2E;  /* Deep dark background */
+    color: #D9E0EE;  /* Slightly off-white text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.output .banner span.text {
+    color: #FFFFFF; /* Set the rest of the text to white */
+}
+
+.terminal-container {
+    width: 95vw;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    background-color: #26233A;  /* Neovim-style background */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.terminal-header {
+    background-color: #2E2E3F;  /* Darker, subtle header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #44475A;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF5C57;  /* Close button */
+}
+
+.button.minimize {
+    background-color: #FFBD2E;  /* Minimize button */
+}
+
+.button.maximize {
+    background-color: #28C840;  /* Maximize button */
+}
+
+.terminal-title {
+    color: #D9E0EE;
+    font-weight: bold;
+}
+
+.terminal-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.output {
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.output .banner {
+    color: #3b78d3;  /* Pastel purple */
+}
+
+.output .logo span.whcc {
+    color: #96CDFB;  /* Light cyan */
+}
+
+.output .logo span.hack {
+    color: #F28FAD;  /* Pastel pink */
+}
+
+.output span.command {
+    color: #96CDFB;  /* Light cyan for commands */
+}
+
+.output span.success {
+    color: #ABE9B3;  /* Light green for success messages */
+}
+
+.output span.error {
+    color: #F28FAD;  /* Pastel pink for errors */
+}
+
+.output span.info {
+    color: #FAE3B0;  /* Yellow for info messages */
+}
+
+.prompt {
+    color: #F5A97F;  /* Soft orange for prompt */
+    margin-right: 5px;
+}
+
+.prompt .domain {
+    color: #96CDFB;  /* Light cyan for "@whcc.club" */
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    color: #C6D0F5;
+    position: relative;
+}
+
+input {
+    background: none;
+    border: none;
+    color: #D9E0EE;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.cursor {
+    font-weight: bold;
+    color: #D9E0EE;
+    animation: blink 1s step-end infinite;
+    position: absolute;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .terminal-container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .terminal-header {
+        padding: 5px;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    .button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+    }
+
+    .terminal-body {
+        padding: 5px;
+    }
+
+    .output {
+        font-size: 14px;
+    }
+
+    .input-line {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-header {
+        padding: 2px;
+    }
+
+    .buttons {
+        gap: 3px;
+    }
+
+    .button {
+        width: 8px;
+        height: 8px;
+    }
+
+    .terminal-title {
+        font-size: 10px;
+    }
+
+    .output {
+        font-size: 12px;
+    }
+
+    .input-line {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+}
