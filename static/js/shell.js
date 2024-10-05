@@ -28,8 +28,8 @@ Available commands:
   login    - Log in to your account
     `,
     about: `
-The White Hat Cyber Crew (WHCC) is a BCIT student club focused on ethical hacking,
-cybersecurity, and providing a platform for students to engage in Capture The Flag (CTF) competitions.
+The White Hat Cyber Crew (WHCC) is BCIT's first cybersecurity club focused on ethical hacking,
+cybersecurity tips and tricks, and providing a platform for students to engage in Capture The Flag (CTF) competitions.
 We aim to foster a community of learners who are passionate about hacking ethically and enhancing their
 skills through hands-on challenges and events.
 
@@ -38,9 +38,9 @@ security enthusiasts.
     `,
     events: `
 Upcoming Events:
-  - CTF #1: Intro to CTF, Date: Oct 15th, 2024
-  - Workshop: Getting Started with Ethical Hacking, Date: Oct 20th, 2024
-  - CTF #2: Hack the Planet!, Date: Nov 1st, 2024
+  - Industry Night: Oct 30th - a discussion with industry professionals
+  - OT Cybersecurity: Nov 13th - filling the gap between OT and IT specifically in Transit system
+  - Challenges/Projects: Our projects are gonna be open to everyone to join and learn on our discord
 
 For more details, visit our website or Discord!
     `,
@@ -53,7 +53,7 @@ Join our next CTF and test your hacking skills!
     `,
     contact: `
 Contact Us:
-  - Email: whcc@bcit.ca
+  - Email: whitehatcybercrew@gmail.com
   - Discord: Join our server for real-time updates and discussion.
   - Instagram: @whcc_bcit
     `,
